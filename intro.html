@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive PortFolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="ext.js" language="javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Creating Menu Tabs & Logo at Top Using HTML -->
+    <header>
+        <a href="#" class="logo"></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+      <!-- Creating About Me Layout in HTML -->
+    <section class="intro" id="intro">
+        <div class="intro">
+            <h2>Exploring Web Pages</h2>
+			<br>
+			<h3> Why do people visit websites?</h3>
+			<p> Think of reasons that a user might visit each website, such as learning more about a topic or entertaining themselves.</p>
+			<br>
+           <h3> Why do people create websites?</h3>
+			<p>Think of reasons why someone would make a website, such as getting feedback and advice from others, or more social reasons such as personal expression</p>
+			<br>
+           <h3> Personal Web Pages</h3>
+			<p>Most of the web pages that we visit are created by large organizations that have a lot of people working on them. But anyone can create their own personal web page and publish it to the Internet. Today, we're going to look at some personal web pages. These pages were created by a single person who had something that they wanted to share with the world.</p>
+			
+			<ul>
+			<p><a href="https://wjhall12.github.io/example1/" target=_blank> Emulation</a></p>
+				<p> <a href="https://wjhall12.github.io/example2/" target=_blank> All About Bub</a></p>
+				<p><a href="https://wjhall12.github.io/example4/" target=_blank> My Favorite Game</a></p>
+				<p><a href="https://wjhall12.github.io/example5/" target=_blank> Cheeseburgers</a></p>
+				<br>
+				<h3> What is each person sharing with the world?</h3>
+				<p>What do you think the website creator want the user to do something?</p>
+				<br>
+				<h3> Why do you think the website is important to the creator?</h3>
+				<p>Does the website try to convince the user of something in particular? Does the website serve as a form of personal expression for the creator?</p>
+				<br>
+				<h3> Share / Discuss</h3>
+				<p>Once everyone has had a chance to brainstorm about their sites, share out your thoughts. The goal of this discussion is to prepare you to think of yourself as a potential website creator. Imagine why you might create a site similar to those in the examples. What would be your motivation for your site?  </p>
+				<br>
+				<hr>
+				<br>
+			<!-- Intro to HTML -->
+				
+			<h2>Intro to HTML</h2>
+			<br>
+			<h3>How could you explain to someone over the phone how to draw the following web page?</h3> 
+				<br>
+				<img src="images/recipes.jpg" alt="Sample site" width="50%">
+				<br>
+			<h3> Share / Discuss</h3>
+				<p>One student will verbally share one instruction with the class. While another student acts as the person on the phone trying to draw the web page. The person receving these instructions should  “draw” the website exactly as the student's instructions say. For example, if told to "Write bigger", write the word "bigger" on the page. If they don't indicate where text goes then place text in random locations. As the student gives  instructions make sure the site is drawn  correctly. If it's not drawn it correctly, have the other person giving directions be more specific until the site can be drawn it correctly. Change students after a couple of instructions to get more students involved. Keep track of the instructions students give and the improvements they make to the instructions somewhere visible as well. Repeat this process until the entire class have recreated most of the web page.  </p>
+				<br>
+			
+			<h3> How can we tell the computer both what to put on the web page, and how to organize it?</h3>
+				<p>There's a lot of information that we need to communicate if we want to create web pages. It's not enough to just know what content you want to put on your page, like the actual words or images. You need to know where things should be and how they should look. Today we're going to start learning the languages used on the web to represent this additional information.  </p>
+				<br>	
+			<h3>Key Vocabulary</h3>
+					<br>	
+				<p><strong>website content</strong> - the text and images on a website.</p>
+				<p><strong>website structure</strong> - - how the content of a website is organized.</p>
+				<br>
+			<h3>What is HTML?</h3> 
+				<p><strong>HTML</strong> - Hypertext Markup Language, a language used to create web pages</p>
+				<br>
+			<h3>What are HTML Elements?</h3> 
+				<p><strong>HTML Element</strong> - A piece of a website, marked by a start tag and often closed with an end tags. There are are a bunch of different HTML structurs you can use on a webpage, including <strong>Headings, Paragraphs, Images, Lists and Links.</strong> 
+				<br>
+				<img src="images/html_elements.jpg" alt="HTML Elements" width="40%">
+				<br>
+				
+			<h3>What are HTML Tags?</h3> 
+				<p><strong>HTML Tag </strong> - The special set of characters that indicates the start and end of an HTML element and that element's types. The content is the literal words that are being typed on the page. Using HTML, web designers are providing structure to the page, explaining how those pieces of content should be interpreted. Later we will learn CSS, a language that allows web desiners to individually style elements. </p>
+				
+				<img src="images/html_tag.jpg" alt="HTML Elements" width="30%">
+				<br>
+				
+				<br>
+				
+			<h3>Explore HTML </h3> 
+				<p>HTML uses a system of tags to surround content and indicate what it is and how it should be displayed. HTML tags are used to structure, or organize, (heading, paragraph, list, etc.) contents on the screen. Although certain structural roles may be associated with appearance (headings are larger), HTML does not specify anything in particular about the appearance. This allows users with different needs, such as the visually impaired, to interact with the structured content in a way that makes the most sense for them. Later, students will learn about styles and CSS, which allows you to specify the exact size, color, and spacing of their HTML elements. Take a look below and compare the file with the example web page at the top entitled "Wally'S RECIPES". What text is appearing in both the code and the web page? How is this language communicating extra information about the way to represent text? </p>
+				
+				<img src="images/sample_tags.jpg" alt="Sample Tags" width="50%">
+				<br>
+				<br>
+				
+			<h3>HTML Explained</h3>
+				
+				<img src="images/html_explained.jpg" alt="Sample Tags" width="50%">
+				<br>
+			<h3>HTML Headings</h3>
+				<br>
+				<p>HTML headings are defined with the h1 to h6 tags. h1 defines the most important heading. h6 the least important thing.</p>
+				<br>
+				<img src="images/headings.jpg"alt="Headings" width="30%">
+				<br>
+			<h3>HTML Paragraphs</h3>
+				<br>
+				<p>HTML paragraphs are defined witht he p tag.</p>
+				<br>
+				<img src="images/paragraphs.jpg"alt="Paragraphs" width="30%">
+				<br>
+			<h3>Unordered HTML List</h3>
+				<br>
+				<p>An unordered list starts with the ul tag. Each list item starts with the li tag. The list items are marked with bullets (small black circles) by default:</p>
+				<br>
+				<img src="images/unordered_list.jpg"alt="Unordered List" width="30%">
+				<br>
+				<br>
+			<h3>Ordered HTML List</h3>
+				<br>
+				<p>An ordered list starts with the ol tag. Each list item starts with the li tag. The list items are marked with numbers by default:</p>
+				<br>
+				<img src="images/ordered_list.jpg" alt="Ordered List" width="30%">
+				<br>
+				<br>
+				<h3>Practice HTML with Text Editor</h3>
+				<p> Web pages can be created and modified by using professional HTML editors however, you can learn HTML using a simple text editor like Notepad (PC) or TextEdit (Mac). To practice the basics of HTML, what will use this text editor below to write and markup using all of the HTML tags from above. </p>
+
+			<iframe src="https://wjhall12.github.io/code_editor/" width="100%" height="300"></iframe>
+				
+			<br>
+			<hr>
+			<br>
+	<!-- Download Atom to build websites -->			
+				<h2>Download Atom for Free and Start Building Websites</h2>
+			<br>
+				<h3>Make a Video showing students how to use Atom</h3>
+				<br
+				<h3>Step 1: Go to <a href="https://atom.io/">www.atom.io</a></h3>
+				<p><strong>Click the Download Button</strong></p>
+				<p>Click <strong>File</strong> in the Menu Bar. Then click <strong>Settings.</strong>
+				<br>
+				Next Click <strong>Install</strong> and you will see <strong>Install Packages</strong> Search bar </p>
+				<br>
+				<p> <strong>If you are using a Mac</strong> 
+				<br>Drag the atom icon to the Applications Folder after it downloads</p>
+				<p>Open Atom and click the <strong>Atom Logo</strong> at the top left corner.</p>
+				<p>Then click <strong>Preferences</strong> then click <strong>Install</strong> and you will see  <strong>Install Packages</strong> Search bar </p>
+				<br>
+				<h3>Step 2: Install Packages</h3>
+				<h4>Recommended Atom Packages to Install</h4>
+				<br>
+				<p><strong>atom-ternjs</strong> - Adds code intelligence to Atom.</p>
+				<p><strong>autoclose-html-plus</strong> - Will help you automatically close HTML tags.</p>
+				<p><strong>emmet</strong> - Adds code expansion to Atom.</p>
+				<p><strong>pigments</strong> - Adds the ability to display colour in Atom code files.</p>
+				<p><strong>language-ejs</strong> - Adds EJS language support to Atom.</p>
+				<p><strong>atom-beautify</strong> - Helps to automatically format your code in Atom.</p>
+				<br>
+				
+				<h3>Step 3: Create a Project Folder to Work In</h3>
+				<p>Click <strong>File</strong> then click <strong>Add Project Folder</strong> </p>
+				<p><strong>Create A New Folder</strong> either on your desktop or inside your documents. </p>
+				<p>Name the Folder <strong> Web Development</strong></p>
+				<p>Select that folder and you will see the project folder show up in the sidebar.</p>
+				<p>This is where we are going to store all of our projects.</p>
+				<br>
+				<br>
+				
+				
+				
+			<hr>
+			<br>
+				
+	<!-- Project 1: HTML Web Page -->			
+			<h2>Project 1: HTML Web Page</h2>
+			<br>
+			<h3> What is one personal value you would like to share with the world?</h3>
+			<p> In this project, students use what they have learned to create their own personal web page on a topic of their choice. First we will review what we have learned about HTML, then we will begin designing a web page and identifying which tags you will use to implement it.</p>
+			<br>
+           <h3> Project Guide </h3>
+			<p>Click the link of the Google Doc and make a copy or cownload and print a copy.</p>
+			<p><a href="https://docs.google.com/document/d/1yI1H1Mjqcowiz-jOGrHf4zRklLGclYXjadn6f1r-qO4/edit?usp=sharing" target=_blank>HTML Project 1</a></p>
+			<br>
+			<a href="https://docs.google.com/document/d/1yI1H1Mjqcowiz-jOGrHf4zRklLGclYXjadn6f1r-qO4/edit?usp=sharing" target=_blank>
+				<img src="images/project 1 guide.jpg" alt="Sample Tags" width="50%"></a>
+			<br>
+			<h4>Step 1: Define - State your Goal</h4>
+			<p>Students will already have stated a personal value in the warm-up, but this is a chance for them to refine what they want to say, or even change their minds about their website topic. </p>
+			<br>
+			<h4>Step 2: Prepare - Design your Page</h4>
+			<p>As students answer questions about the design of the page, ensure that they are differentiating between the content of the page and the way that content is organized or structured. After they have completed their designs, ensure that they can identify which tags will be needed for different text on the web pages. </p>
+			<br>
+			<h4>Step 3: Try - Develop your Page</h4>
+			<p>After you have checked the designs, allow students to open Atom and code their pages. They will have a chance to review all of the tags they have learned before they start on their web pages. They can complete these activities as a review or use them as resources while they work on their projects. </p>
+			<br>
+			<h4>Make a Video showing students how to use Atom</h4>
+			<br>
+			<h4>Step 4: Reflect</h4>
+			<p>Students should have a chance to think about what they liked best about their pages. You may also want to allow students to formally or informally present their work to the rest of the class. </p>
+				<br>	
+			<h4>Step 5: Peer Review</h4>
+			<p>Give feedback to your peers' websites using the Peer Review form. </p>
+				<br>
+			<a href="https://docs.google.com/document/d/139gb1Byo0BATiWUfImEl2O-cSlK5PPB-bucEDG0omgg/edit?usp=sharing" target=_blank> <img src="images/peer_review.jpg" alt="Sample Tags" width="30%"></a>
+				<br>
+				<br>
+				<hr>
+				<br>
+	
+				
+	<!-- Introduction to CSS -->			
+			<h2>Introduction to CSS</h2>
+			<br>
+			<h3>How can we change the style of text on a web page?</h3>
+			<p> So far we have only made web pages where we control the content and structure, such as which parts of the pages are headings or paragraphs. We've been using HTML as the language to specify the content and structure of the pages. While HTML allows us some control over how the page looks, it doesn't give developers much control over the specific look and style of each element. To do that, we need a language to express style.</p>	
+			<br>
+			<h3>Sample Website</h3>
+			<br>
+			<p> Check out the web page below. 
+			<br><strong>If you wanted to create a page like this. 
+			<br>
+			What do you already know how to do? What do you still need to learn how to do?</strong></p>	
+			<br>
+			<img src="images/together.jpg" alt="Sample CSS" width="60%"></a>
+			<br>
+			<h3>What is CSS?</h3>
+			<p><strong>CSS</strong> - Cascading Style Sheets; a language used to describe how HTML elements should be styled</p>
+			<p><strong>CSS Selector</strong> - the part of a CSS rule-set that defines which HTML elements the style should be applied to</p>
+			<br>
+			<p>Students should understand that the structure of the page is there to organize the information in a logical way, but doesn't tell the computer how to display it. So, for example, the structure could include different headings and paragraphs, but would say nothing about the color of text or how big it is displayed. The style of the page is the specifics of its appearance. Without a particular style, each web browser would decide how to display different web page elements on their own.</p> 
+			<br>
+			<p>
+			Styles are important to allow web developers to decide exactly how a web page looks on the screen. Because styles are separate from structure and content, web developers can change the style of an entire page very easily, without having to make any changes to the structure and content of the web page. This means that it's very easy for web pages to have an individual look and feel that is unified across the entire page. </p>
+			<br>
+			<img src="images/htmlvcss.jpg"alt="HTML v CSS" width="30%"></a>
+			<br>
+			<h3>Introduced Code</h3>
+			<p><strong>color: value;</strong> - With CSS, colors can be specified in different ways: By color names, RGB values, and hexadecimal values. All modern browsers support 140 color names and thousands of HEX Values</p>
+			<br>
+			<p><a href="https://www.w3schools.com/colors/colors_names.asp" target=_blank>Color Names</a></p>
+			<a href="https://www.w3schools.com/colors/colors_names.asp" target=_blank> <img src="images/colors.jpg" alt="CSS Colors" width="30%"></a>
+			<br>
+			<br>
+			<p><a href="https://colorhunt.co/" target=_blank>HEX Color Values</a></p>
+			<a href="https://colorhunt.co/palettes/popular" target=_blank> <img src="images/color palettes.jpg" alt="Color Palette" width="30%"></a>
+			<br>
+	
+			<p><strong>font-family: value;</strong> - In CSS, we use the font-family property to specify the font of a text. In CSS there are five generic font families: 
+			<br>
+			<br><em>Serif</em> fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+			<br><em>Sans-serif</em> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+			<br><em>Monospace fonts</em> - here all the letters have the same fixed width. They create a mechanical look. 
+			<br><em>Cursive</em> fonts imitate human handwriting.
+			<br><em>Fantasy</em> fonts are decorative/playful fonts.</p>
+			<br>
+			<p><strong>font-size: value;;</strong> - The font-size property sets the size of the text. Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.</p>
+			<p><strong>text-align: value;</strong> - The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified.</p>
+			<p><strong>text-decoration: value;</strong> - The text-decoration-line property is used to add a decoration line to text.</p>
+			<br>
+		<h3>Selecting by Tag Name</h3>
+		
+		<p>We use CSS rules to select elements on a web page so that we can then style those elements. The way we tell our CSS rule which HTML elements to style is by using selectors. The element selector selects HTML elements based on their tag names. Each HTML element <br> <img src="images/elements.jpg" alt="Elements" width=10%> <br>and any other HTML element can be selected with CSS by using the tag name without the angle brackets (< and >). Instead, in CSS you use curly braces <strong> {  } </strong>. For example, you can select all of the <strong>paragraphs</strong> tags in your webpage by using the element selector <strong>p</strong>. Here's a CSS rule that changes the color of each paragraph on a web page:<strong> p { color: blue; } </strong> </p>
+						
+		<br>
+		<h3>How to link stylesheet to HTML</h3>
+		
+		<p>You can change the look of an entire website by changing just one file! Each HTML page must include a reference to the style sheet file inside the inside the head section using the following link tag.</p>
+		
+		<img src="images/link css.jpg" alt="Linking CSS" width="15%">
+		
+		<p>Just like with HTML, Stylesheets can be written in any text editor. Unlike HTML, Stylesheets must be saved with a .css extension as opposed to .html extenstion with HTML files. Here is how the "style.css" file looks</p>
+		
+		<img src="images/style css.jpg" alt="Linking CSS" width="40%">	
+		<br>
+		<h3>Practice styling text using CSS</h3>
+		
+		<p><strong>(Make Video!) </strong>Create a HTML Page. Name it practice. Take time to practice styling text using CSS. Be sure to link your stylesheet to HTML. Be sure to create a HTML page named <strong>index.html</strong> and a CSS page named <strong>style.css</strong></p>
+	<br>
+	<hr>
+	<br>
+	
+	<!--Project 2: Your Personal Style -->
+	<h2>Project 2: Your Personal Style</h2>
+			<br>
+			<h3> What is one personal value you would like to share with the world?</h3>
+			<p> In this project, you will use what you have learned to create your own styled web page on a topic of your choice. In the previous lesson you should have gotten some practice on how to style a web page using CSS. Now you will create a project designing a web page and identifying which CSS properties you will use to implement it. You will create your web page using Atom or another Text Editor of your choice and share with the rest of the class. After engaging in a formal feedback process, you will make final changes to your website before reflecting on the process.Your page will show that you can…<strong>Design</strong> a page to reach a goal, Use<strong> CSS</strong>  to style a site, and <strong>Write</strong> readable code.</p>
+			<br>
+           <h3> Project Guide </h3>
+			<p>Click the link of the Google Doc and make a copy or cownload and print a copy.</p>
+			<p><a href="https://docs.google.com/document/d/1eGG7-l3tMwE3LMpqG_GDaO0wvjmm46uGaBqYNPgRx4I/edit?usp=sharing" target=_blank>Your Personal Style Project</a></p>
+			<br>
+			<a href="https://docs.google.com/document/d/1eGG7-l3tMwE3LMpqG_GDaO0wvjmm46uGaBqYNPgRx4I/edit?usp=sharing" target=_blank>
+				<img src="images/your_personal_style.jpg" alt="Your Personal Style" width="80%"></a>
+			<br>
+			<h4>Step 1: Define - State your Goal</h4>
+			<p>What aspects of your personal style would you like to share with the world? </p>
+			<br>
+			<h4>Step 2: Prepare - Design your Page</h4>
+			<p>How can your web page design communicate your personal style? What content is important to include in your webpage? How should the content be styled? Make a sketch of your page. What CSS Properties will you need for your page? </p>
+			<br>
+			<h4>Step 3: Try - Develop your Page</h4>
+			<p>Rreview the CSS properties you’ve seen and learn more about HTML Color Names and HEX Color Values before starting your project. Once you are ready, start coding your page. </p>
+			<br>
+			<h4>Make a Video showing students how to create their own web pages using HTML and CSS</h4>
+			<br>
+			<h4>Step 4: Reflect</h4>
+			<p><strong>What</strong> is your favorite thing about your website? <strong>Write</strong> three things you want feedback on; <strong>Trade</strong> with someone else and look at their web page;<strong> Fill</strong> out the feedback sentences. </p>
+				<br>	
+			<h4>Step 5: Peer Review</h4>
+			<p>What one thing noticed by your peer as something that was good in your work that you hadn’t already noticed</p>
+			<p>What two things did your peer identify that would improve the quality of your website?</p>
+			<p>List two specific actions you can take to make these improvements.</p>
+				<br>
+			<a href="https://docs.google.com/document/d/1PtnUGqHWZpzJ6eZbFStxx-78F6Wy6o8UESQgCshfP6Y/edit?usp=sharing" target=_blank> <img src="images/peer_review2.jpg" alt="Style Text Project" width="30%"></a>
+				<br>
+				<br>
+				<hr>
+	
+	
+		<!--Using Images -->
+		<h2>Using Images</h2>
+			<br>
+			<h3> Do you think this is fair?</h3>
+			
+			<h4>Scenario 1:</h4>
+			<p>You take a great picture and someone puts it on their social media account and with your name beside it. </p>
+			<br>
+			<h4>Scenario 2:</h4>
+			<p>You write a story and someone else publishes it and says that they wrote it. </p>
+			<br>
+			<h4>Scenario 3:</h4>
+			<p>You write a song and someone sings it to their friends. </p>
+			<br>
+			<h4>Scenario 4:</h4>
+			<p>You write a song and someone sings it at a concert and makes a lot of money. </p>
+				<br>	
+			<h4>Scenario 5:</h4>
+			<p>You take a picture and someone else Photoshops it and puts the new version on his web site.</p>
+				<br>
+			<h3> Knowing your rights, and respecting the rights of others</h3>
+			<br>
+			<p><strong>Copyright</strong> -  the exclusive legal right to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same. </p>
+			<br>
+			<p>Copyright is granted the moment something is created, so unless explicitly told otherwise, we have to assume any picture, video, or other media we find online is fully covered by copyright law, which means that no one else can make copies or post it online without permission.</p>
+			<br>
+			<p>Sometimes, though, we want people to share our work so that more people can see it. The <strong>Creative Commons (CC) </strong>license was developed to help content creators have more specific control over how other people can use their work.</p>
+			<br>
+			<p>Click the link and watch the video to learn more about Creative Commons</p>
+			<br>
+			<p><a href="https://youtu.be/srVPLrmlBJY" target=_blank> What are Creative Commons Licences?</a></p>
+			<br>
+			<p><strong>Why would we want to use each of these parts?</strong></p>
+			<br>
+			<img src="images/creative_commons.jpg" target=_blank width="30%">
+			<br>
+			<img src="images/creative_commons_options.jpg" target=_blank width="30%">
+			<br>
+			<h3> How can we add images on our websites, while making sure we respect everyone's rights?</h3>
+			
+			<p>Today, we're going to add some images to our sites. This can make the websites a lot more fun, but it also means we'll need to be extra careful about making sure that we are safe and responsible in how we use them.</p>
+			<br>
+			<h3>Adding Images</h3>
+			<br>
+			<p>To add images, we use the <strong> img tag</strong>. </p>
+			<br>
+			<img src="images/img_src.jpg" target=_blank width="30%">
+			<br>
+			<p><strong>img ("image"),</strong>  this tells HTML to include an image. </p>
+			<p><strong> src ("source"),</strong> says where to find the file. </p>
+			<p><strong>alt ("alternate"), </strong> is text that will be used if the file cannot be found. </p>
+			<br>
+			<h4>There are two ways we can add images to a website</h4>
+			<p>You can <strong>save the images on your computer</strong> inside the same folder as your website. Usually you add a separate folder inside your website folder and name that folder images </p>
+			<br>
+			<p>OR</p>
+			<br>
+			<p>You can <strong>get images off of a website. </strong> To get an image from a website, you must specify an absolute (full) URL in the src attribute </p>
+			<br>
+			<h4>There are four websites that we recommend</h4>
+			<p><strong>https://unsplash.com</strong>/</p>
+			<p><strong>https://www.pexels.com/</strong></p>
+			<p><strong>https://pixabay.com/</strong></p>
+			<p><strong>https://emojipedia.org/</strong></p>
+			<br>
+			<h4>For icons and clipart we recommend</h4>
+			<p><strong>https://www.flaticon.com/</strong>/</p>
+			<br>
+			<p>All of these websites are under the <strong>Public Domain Creative Commons License</strong>, which means anyone can use the work, in any way that you want. </p>
+			<br>
+			<h4>Let's Practice</h4>
+			<br>
+			<p>Create a New Folder inside your Web Development Folder.<br> Name it <strong>Adding Images.</strong> <br> Add an html file named <strong>index.html</strong> and a css file named <strong>style.css</strong>. <br>Then also create a folder inside the Adding Images folder and name that folder <strong>images</strong>. </p>
+			<br>
+			<h4>IMAGE FROM IMAGES FOLDER (On your Computer)</h4>
+			<br>
+			<p> Open <strong>index.html</strong> , be sure to include a link for your stylesheet inside the <strong>head section</strong></p> 
+			<p>Then Add a <strong>heading</strong> and a <strong>paragraph</strong>.</p> 
+			<p>The heading should simply say <strong> Images saved in Folder</strong>. Then in the paragraph you will type <stromg>This image is saved on my computer</stromg> .</p>
+			<br>
+			<h4>Make Video showing students how to create their own web pages using HTML and CSS</h4>
+			<br>
+			<p>Find an image of an animal that you like on one of the sites (unsplash.com), (pexels.com) or (pixabay.com).</p>
+			<p><strong>Right-Click</strong> on the image and save the image inside your images folder. Give it a simple name, (dog) or (cat).</p>
+			<p>After the paragraph. Use the img src= tag with quotation marks after the =. Add the image file from the images folder and inside the quotation marks " ". Include an alt="" tag with a name describing the image inside the quotation marks.  </p>
+			<img src="images/img_src.jpg" target=_blank width="30%">
+			<br>
+			<p>You may notice that the image size is very large. You can specify the size of the image to make it fit propotionally with the web page.</p>
+			<p>To specify the size of the image you will Open your <strong>style.css</strong> file and add style to the image <strong>img {  } </strong>. <br> You can also add <strong>width</strong> or <strong>height</strong> inside the <strong>{  }</strong> along with a percentage to enable you to reduce or increase the size of the image to your liking. etc 
+			<br>
+			<strong>img { width: 40%; }</strong> Be sure to use the <strong>: (colon)</strong> after the property <strong>img</strong> and a <strong>; (semicolon)</strong> after the value <strong>40%</strong>. </p>
+			<br>
+			<h4>IMAGE FROM A WEBSITE</h4>
+			<br>
+			<p> Add another <strong>heading</strong> and a <strong>paragraph</strong>.</p> 
+			<p>The heading should say <strong> Images from a Website</strong>. Then in the paragraph you will type <stromg>This image comes from a website</stromg> .</p>
+			
+			<p>Find another image of an animal that you like on one of the sites (unsplash.com), (pexels.com) or (pixabay.com).</p>
+			<p>This time you will <strong>Right-Click on the URL (Web Address) </strong> of the image. </p>
+			<p>>Use the <strong>img src= </strong>tag with quotation marks after the =. <br>
+			Paste the <strong>URL (Website Address) </strong> in between the quotation marks " ". <br>
+			Be sure to include an alt="" tag with a name describing the image inside the quotation marks.  </p>
+			<br>
+			<h4><em>You may notice that both images are styled the same (width 40%). Later we will learn how to style each individual image separately</em></h4>
+			<br>
+			<br>	
+			<hr>
+			<br>
+	
+	<!--HTML Links -->
+		<h2>HTML Links</h2>
+			<br>
+			<h3>What was the first web page ever created?</h3>
+			
+			<br>
+			<img src="images/1st_website.png" target=_blank width="30%">
+			<br>
+					
+			<p>On August 6, 1991, Tim Berners-Lee created the first website. And while there are nearly 1.9 billion websites that exist today, it makes sense that we understand how to create a webpage that is comprised of simple text with a few hyperlinks. Even though the first web page looks simple, it had something that had never been done before: links. Links are what made the web special, because they let people easily move around the Internet. Today, you'll learn how to put links on your own web pages, so that your team can combine all your pages together into one website.</p>
+			<br>
+			<h3>HTML Links - Hyperlinks</h3>
+			<br>
+			<p>HTML links are called <strong>hyperlinks</strong>. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand. </p>
+			
+			<img src="images/links.jpg" target=_blank width="30%">
+			<br>
+			<p> The HTML <strong>a</strong> tag definse a hyperlink.</p>
+			<p>The most important attribute of the <strong>a element</strong> is the <strong>href attribute</strong>, which indicates the link's destination.</p>
+			<p>The <strong> link text</strong> is the part that will be visible to the reader. Clicking on the link text, will send the reader to the specified URL address. </p>
+			<br>
+			<h4>Example</h4>
+			<p>This example shows how to create a link to Google.com </p>
+			<br>
+			<img src="images/example_link.jpg" target=_blank width="50%">
+						
+			<br>
+			<p><strong>By default,</strong> links will appear as follows in all browsers:</p>
+			<p>An unvisited link is underlined and blue</p>
+			<p>A visited link is underlined and purple</p>
+			<p>An active link is underlined and red</p>
+			
+			<br>
+			<h3>HTML Links - The target Attribute</h3>
+			<br>
+			
+			<p><strong>By default,</strong> the linked page will be displayed in the current browser window. </p>
+			<p>To change this, you must specify another target for the link.</p>
+			<br>
+			<p>Most often we use the <strong>target</strong> attribute to specify where to open the linked document.</p>
+			<p>And in most cases target is usually followed up with the <strong>_blank value</strong> , which opens the document in a new window or tab</p>
+			<img src="images/link_target.jpg" target=_blank width="60%">
+			<h3>HTML Links - Use an Image as a Link</h3>
+			
+			<p>To use an image as a link, just put the <strong>img</strong> tag inside the <strong>a</strong> tag. Click image below to go to Cars.com. </p> 
+
+			<a href="https://www.cars.com/" target=_blank><img src="images/car-bg.jpg" alt="Cars.com" width="50%"></a>
+			
+			<br>
+			<img src="images/link_images.jpg" target=_blank width="90%">
+			<br>
+	
+			<h3>Practice Adding Links</h3>
+			<p> Go ahead and practice adding links to a webpage. Use an image to link to a page and use the target attribute to open a webpage in a different tab, </p>
+
+			<iframe src="https://wjhall12.github.io/code_editor/" width="100%" height="300"></iframe>
+			<br>
+			<h3>Other ways to use Links</h3>
+
+			<p>You can also use links to link to a <strong> page within the same website</strong> without the "https://www" part):</p>
+			<p>You can link to an <strong>email address by using the mailto:</strong> inside the href attribute to create a link that opens the user's email program (to let them send a new email:</p>
+
+			<br>
+			<br>	
+			<hr>
+			<br>
+			<!-- Styling Elements with CSS -->			
+			<h2>Styling Elements with CSS</h2>
+			<br>
+			<h3>How can we style text, images, links and layouts to a webpage?</h3>
+			<p> This lesson builds on what you've previously learned about HTML tags, links, images and CSS properties. Nww we will be looking at properties that can be used on elements. These new properties impact the visual look of the web page beyond its text and give students more precise control over the layout of their pages.</p>	
+			<br>
+			<h3>Divs</h3>
+			<p>
+			The div tag defines a division or a section in an HTML document. The div tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. The div tag is easily styled by using the class or id attribute. Any sort of content can be put inside the div tag!
+			</p>
+			
+			<h4>The HTML Code for Divs</h4>
+			<ul> 
+				<li>Step 1 - remember to always add the stylesheet link and change the title - link rel="stylesheet" href="style.css"</li>
+				<li>Step 2 - have students type in <strong>h1</strong> Hello, I'm Wally <strong>/h1</strong> and <strong>p</strong> a Front End Web Developer <strong>/p </strong>and save and open in browser. Then have them click inspect and have to hover over the <strong>h1 and p tags</strong> to see how HTML elements are displayed as a box. You will see that each element will also show when you hover over the box.</li>
+				<li>Step 3 -  Have students create a <strong>div</strong> and move the <strong>h1 and p content inside the div</strong></li>
+				<li> Step 4 - have students add div in the css and change the background color to green save and refresh in the browser to see now there is a div that shows when you hover over. Notice that the div now has the h1 and the paragraph grouped together where as before they were separate. And you now see that the color of just that section color has changed </li>
+			
+			</ul>
+	
+				<img src="images/div_html.jpg" alt="div_html" width="60%">
+					  
+			<h4>CSS code for Divs</h4>
+			<ul>
+				<li> step 1: style the div to show how the section of the html that has been divided. <strong>div { background-color: #DAEAF1;</strong> </li>
+				<li>step 2: show how to make the margins on all 4 sides have no margin. Hit save and refresh, and you'll notice that margin his now at 0 from the left and right but not at the top. To get the margin to be 0 at the top you must add an h1 margin-top to 0. <strong>body {  margin: 0;}</strong></li>
+				<li>step 3: add a margin-top to the h1 and set it to 0 which will make the div to have a 0 margin at the top now, in addition to the left and right. <strong>h1 { margin-top: 0; }</strong> </li>
+				<img src="images/div_css.jpg" alt="div_html" width="60%">
+				<br>
+				<br>
+			<h3>The Box Model</h3>
+			<p>
+			In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. Type W3 schools Box Model to show students. 
+			</p>
+				
+			<ul>
+				<li>Content - The content of the box, where text and images appear</li>
+				<li>Padding - Clears an area around the content. The padding is transparent</li>
+				<li>Border - A border that goes around the padding and content</li>
+				<li>Margin - Clears an area outside the border. The margin is transparent</li>
+				
+			</ul>
+				<img src="images/box_model.jpg" alt="box_model">
+				<br>
+				<img src="images/box_model_example.jpg" alt="box_model_example" width="90%">
+					 
+			
+			<h4>Have students complete the The Box Mode HTML Code activity</h4>
+			<ul> 
+				<li>index.html - Inside a div - <strong>h1 Box Model /h1</strong> Inside a paragraph (Play around in the css and change the width, margin, padding, and border then inspect the code in a browser to see how it changes the div and how it's affected. Remember if you wanted specify a specific size you can choose to use border-top to only add border to the the top or padding-right to only add padding to the right. And for all 4 sides starting from the top then right, then bottom then left. So let's say you wanted a border to havea width of (border-width: 0px 10px 20px 30px) It would be 0 border at the top, 10px on the left, 20px at the bottom and 30 px on the right. This can be done for padding as well. Just remember to go clockwise as you are affecting the dimensions of the 4 sides. If you wanted to affect the sides you can choose to say padding: 5 10px; for instance. This would mean that you are adding 5 px at the top and bottom and 10 px on the left and right.) Close Div</li>
+				
+				<li> div { width: 600px;   border: 15px solid green;   padding: 50px 10px;   margin: 20px; }</li>
+				<br>
+    
+											
+			<h4>Practice: Have students play around with the Div Containers Activity</h4>	
+			<ul>
+				<li> index.html - div class="top-container"> h1Div Containers pChange the containers/div <br>
+				div class="middle-container" /div <br>
+				div class="bottom-container"/div 
+				</li>
+				<li> style.css - body {  margin: 0;} , </li>
+				<li>h1 {  margin-top: 0;} </li>
+				<li> .top-container {
+ 				 background-color: #DAEAF1;  width: 200px;  height: 200px;}  
+				<br>/* add 20 px of padding, hit save and refresh in the browser and inspect the code to see the box will expand from 200px to 240 px because 20px of padding was added. (40px top and bottom and 40px left and right) */ <br> 
+				padding: 20px;
+				<br>/* add 10 px of solid border to the container, in the browser and inspect the code to see the box will expand from 240px with padding to 260px because 10px of border was added to the 20px of padding. (20px border added to top and bottom and 20px left and right) */<br>
+				border: solid 10px;
+				<br>/* now add 10px of margin to see how the box now has some space between the top and middle container. It doesn't change the size of the box but it does affect where the top-container now is displayed on the screen. (margin is outside of the container, padding and border affects the container) */<br>  margin: 10px;
+				<br> /* have students go to https://codepen.io/psande/pen/nKOJyX to look at the css box model demo */</li>
+				<li>.middle-container {  background-color: blue;  width: 200px; height: 200px;}</li>
+				<li> .bottom-container { background-color: red;  width: 200px; height: 200px; }
+
+				</li>
+			
+			</ul>
+			<br>
+			<h3>Have students complete 3 Boxes </h3>
+				<p>3 boxes: All 200 x 200px. 1st box 10px border: solid & 20px padding. 2nd Box: 20px border solid. 3rd Box: 10px border solid. All 3 boxes should touch diagonally from the top left corner to the bottom right corner of the other box. Be sure to use inspect to see where the margins are. This will involve some math because you will be adding.</p>
+				<ul>
+				<li> index.html - div class="top-container"> h1Div Containers pChange the containers/div <br>
+				div class="middle-container" /div <br>
+				div class="bottom-container"/div </li>
+				<li> style.css - .top-container {
+ 				 background-color: #DAEAF1;  width: 200px;  height: 200px; border: solid 10px; padding: 20px;}  </li>
+				<li> .middle-containier - .middle-container {
+ 				 background-color: red;  width: 200px;  height: 200px; border: solid 20px; margin-left: 260px;} * how did you get 260 margin-left? You take the 200 px of the top margin and add the 20px of padding and 10px of border on both sides and you end up with 260px </li>
+				
+				<li> .bottom-container { background-color: blue;  width: 200px; height: 200px; border: solid 10px; margin-left: 500px;} * How did you get 500 margin-left? You take the 260px of the middle-container and you add the 200px plus the 20px border on both sides which will give the middle container 240. So 260 top plus 240 middle will give you 500 margin-left for bottom. All this need to be inspected in the browser.
+
+				</li>
+				</ul>
+				<br>
+			
+			<h4>Display Elements</h4> Block, Inline, Inline-block, None <br>
+			
+			<p><a href="https://wjhall12.github.io/display_elements//" target="_blank">Display Elements</a></p>
+			<br>
+			<p>A <strong>display:block</strong> element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element. 
+			A block-level element always takes up the full width available (stretches out to the left and right as far as it can). 	Two commonly used block elements are: p and div. Which means paragraph and headings are default to display block.</p>
+			<br>
+			<p>An <strong>Inline</strong> element allows content to stay on the same line, as opposed to block which makes content start on a new line. Also the inline element removes any width or height elements you've made. </p>
+			<br>
+			<p>An <strong>Inline-block</strong> element allows content to stay on the same line, and allows you to set the width and height on the element. With inline-block, you can change the the top/bottom margins and padding, but with inline you can't. One common use for inline-block is to display list items like the nav bar horizontally instead of vertically.</p>
+			<br>
+			<p>If you say display <strong>None</strong> you will simply hide the element from showing in the browser</p>
+			<br>
+			<h4>Practice Have students create a new file.</h4>
+			<p>Index.html - Type 2 paragraphs. The first paragraph will have the word <strong>Hello</strong>. The second paragraph will have the word <strong>World</strong> </p> 
+			<p>style.css - Style the p with a background-color of red. Notice the red is on two separate lines. And it takes up the entire width of the screen </p>
+			<p> Now style the width of the paragraph to maybe 200px to see how the paragraph now is shorter than the width of the page.(play around with the width size)</p>
+			<p>p {background-color: red; width: 200px;}</p>
+			<p><strong>So how can we change a paragraph element from block to something else?</strong></p>
+			<p>Add a display element to the paragraph style and set it to inline. p { background-color: red; width: 200px; display: inline; }</p>
+			<p>Inline elements allow everything to sit next to each other on the same line</p>
+			<p> Go ahead and play around with that </p>
+			<p>Notice now the paragraph width has now been lost. </p>
+			<p><strong>So how can we put paragraph elements on the same line and keep the width?</strong></p>
+			<p>Change the display element inline to inline block. p  { background-color: red; width: 200px; display: inline-block; }</p>
+			<p><strong>What if we added two images to the file. Where will the images sit?</strong></p>
+			<p>Add the cloud and mountain image to the file. Then add the two images in the html under the paragraphs (img src)</p>
+			<p>Notice the two images sit on the same line. That's because by default, images are inline block elements. </p>
+			<p>Go back and change the paragraph display back to inline and/or delete the display altogether and/or change or delete the width to see how the paragraph and images sit on screen.</p>
+			<br>
+			<h4>Position Elements</h4> Static, Relative, Absolute, Fixed <br>
+			<br>
+			<p><strong>Relative Position </strong> - the element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position, which would be from left to right. If we said "top:20px" this would move the the element 20px from the top of the position down 20px so from top down 20px. Play around with different divs and move the boxes around to see what happens when you change the relative position. </p>
+			<p><a href="https://wjhall12.github.io/relative_position/" target="_blank">Relative Position</a></p>
+			
+			<p>
+			<ul>
+			<li>Create a new file and name it Relative Position.</li>
+			<li>Create 3 divs. Give each div a different class with a different color. For instances, red, yellow, green</li>
+			<li>Style each of the divs. Give each div the same width and height. Change the background color to same name as the div. Give each div a position of relative. Then set the position left or top to see how the element is positioned</li>
+			<li>For Example: .red { background-color:red; width:100px; heigth:100px; position:relative; left:200px; }</li></ul></p>
+			<br>
+			<p><strong>Absolute Position</strong> -   The element is positioned relative to its first positioned element. Which means when you use absolute positioning you are actually taking the element out of the flow of the document. And it no longer is considered a part of the natural flow of the document. </p>
+			<p><a href="https://wjhall12.github.io/absolute_position/" target="_blank">Absolute Position</a></p>
+			<p>
+			<ul>
+			<li>Create a new file and name it Absolute Position.</li>
+			<li>Create 3 divs. Give each div a different class with a different color. For instances, red, yellow, green</li>
+			<li>Style each of the divs. Give each div the same width and height. Change the background color to same name as the div. Give each div a position of relative. Then set the position left or top to see how the element is positioned</li>
+			<li>For Example: .red { background-color:red; width:100px; heigth:100px; position: absolute; left:200px; }</li></ul></p>
+			<br>
+	
+			<p><strong>More Absolute and then Fixed Position</strong> 
+			<p><a href="https://wjhall12.github.io/fixed_position/" target="_blank">Fixed Position</a></p>
+			<ul>
+			<li>add a container to show that now the container is the parent container as opposed to the body and the yellow div is being defined by the black container as opposed to the body. </li>
+			<li>And since the blue and red div is not in the container, it is still subject to the body and is being pushed down by the black container. </li>
+			<li>SAfter showing the difference, add a top position to the blue div and set it to 0 to show that now the blue div is inside the black container or at the top of the body which happens to also be where the black container is. /</li>
+			<li>After showing what happens, do the same for the red square. Then also, change the blue position to fixed and add some h1 Hello World text, maybe about 15 then scroll down to show that the blue div will be stuck to the screen. Sort of what you would do with a nav bar.</li>
+			<li>change the position from absolute to fixed then add some h1 text and scroll down to show that the blue div is now stuck and will remain on screen even after scrolling. This is used most often with nav bars. </li>
+			<li> add a top container to show that the blue div is now set at the top of the body which happens to be also where the black container is located.</li>
+				
+			</ul>
+			<br>
+	
+			<p><strong>Center Position</strong> 
+			<p><a href="https://wjhall12.github.io/center_position/" target="_blank">Center Position</a></p>
+
+			<ul>
+			
+			<li>add an h1 and paragraph tag inside a top-container div in a new HTML file.  Put an image above the h1 and paragraph then put two images below them. </li>
+			<li>inside css - body {  margin: 0; /* 1. To center things on the screen, choose text-align: center; */   text-align: center; }</li>
+			<li> h1 { /* 2. As long as the h1 is a full width block element, then aling items: center works. But if you adjust the h1 tag and maybe add a width of 10% then the elemeent is no longer a full width block element and therefore align items: center no longer works for the h1. Even though the body says text align center. */  width: 10%;   margin-top: 0; /* 3. Another way of centering is by using the margin. If you say margin: auto that will center align your element. In this case we want the top and bottom to be auto and left and right to be auto. So we are going to remove the margin-top: 0, because we will change it in this new margin. */ margin: 0 auto; }</li>
+			<li> .top-container {   background-color: #e4f9f5; } , .middle-container {   background-color: green;   width: 200px;   height: 200px; } , .bottom-container {
+				background-color: purple;   width: 200px;   height: 200px; }</li>
+			
+	
+			</ul>
+			</p>
+			<br>
+	
+			<p><strong>Position Images</strong> 
+			<p><a href="https://wjhall12.github.io/position_images/" target="_blank">Position Images</a></p>
+
+			<ul>
+			<li> Lets now change the position of the cloud images by first adding a class to the cloud images. Call the first one top-cloud and the second bottom cloud.</li>
+			<li>change the position of the bottom cloud so that it is no longer in the flow of the rest of the elements by changing the position to absolute. When you hit save and refresh you will see that the bottom cloud is now placed randomly on the screen over to the left of the screen and the mountain is in the center.  */</li>
+			<li>add a padding top to push all of the elements down. Then change the position to relative so that the position of the elements inside the top container are positioned according to the container instead of the body. */</li>
+			<li>After you add the top container position to relative and some padding to the top to push down the entire container, set the position of the top cloud to absolute. (Hit save and refresh). Notice that the top coloud is now placed randomly on the screen, in front of the H1 </li>
+			<li>Add a left margin of 300px and bottom margin of 300px</li>
+			<li> Add a right margin of 300px and bottom margin of 50px </li>
+			</ul>
+			</p>
+			<br>
+	
+			<p><strong>Fonts</strong>
+			<p><a href="https://wjhall12.github.io/fonts/" target="_blank">Fonts</a></p>
+			<ul>
+			<li>If you change the font to serif you will not change the appearence of the fonts on the screen because the default font is already serif which is Times New Roman. But if you change it to sans-serif you will see it change. That's because sans-serif is Arial. Serif makes the font look like they have feet and the sans-serif the fonts look round</li>
+			<li>What if you wanted to change the font to Impact. You would type tohoma then put a comma and type sans-Serif</li>
+			<li>sometimes, the browser will not have the font that you chose and if so, the website will default the font back to the sans-serif, which would be Arial or serif which would be Times New Roman. So what do you to ensure that you get the font you want and everyone else can also see it? You can embed fonts from Fonts.Google.com</li>
+			<li>And we are going look at Roboto, Regular 400, Sacramento, and Montserrat 400 regular. Copy the link and paste it in the head section of the html. This will enable the user to view the font on any browser because the browser will take them to the location of the link and grab the fonts. </li>
+			<li>So now you can copy and paste the font family where you want to put it in your CSS. So for body we will use Roboto. Then for h1 we will use Sacramento and for h2 and h3 we will use Montserrat. Save and refresh to see the text change</li>
+			</ul>
+			</p>
+
+			<br>
+	
+			<p><strong>Creating a Nav Bar = List of Links</strong>
+			<p><a href="https://www.w3schools.com/css/css_navbar.asp/" target="_blank">Nav Bar on w3 Schools</a></p>
+			<p><a href="https://wjhall12.github.io/Nav_Hor_BG_color/" target="_blank">Horizontal Nav Bar with Color</a></p>
+			<p><a href="https://wjhall12.github.io/Vertical_Nav/" target="_blank">Vertical Nav Bar </a></p>
+			<p><a href="https://wjhall12.github.io/Nav-Bar-with-Logo/" target="_blank">Horizontal Nav Bar with Logo Above</a></p>
+			<p><a href="https://wjhall12.github.io/Nav_Hor_Icon/" target="_blank">Horizontal Nav Bar with Favicon</a></p>
+			
+			<ul>
+			<li>A navigation bar needs standard HTML as a base. A navigation bar is basically a list of links, so using the ul and li elements </li>
+			<li>In the HTML you should first create a nav that has ul and li and a href. In between the angle brackets you will type the word Home, About, etc > Home /a> </li>
+			<li>In the CSS you will style the ul { list-style-type: none; margin: 0; padding: 0;}</li>
+			<li>Go through w3 schools at first then make a video</li>
+			<li>list-style-type: none; - Removes the bullets. A navigation bar does not need list markers. Set margin: 0; and padding: 0; to remove browser default settings</li>
+			<li>  The padding in the ul will affect where all words in the nav are space in relation to the body  </li>
+			<li> We don't need to set the margin because it was already done in the body */</li>
+			<li> You can add a backgrond-color to the ul </li>
+			<li>play around with the width and background color to see how it affects the look of the nav. To make the nav bar go all the way from one end to the other, remove the width  </li>
+			<li>If you wanted to make the text centered Add text-align:center to li or a to center the links. Align text looks better than the default setting which is left because the padding may not look right on all words in the nav */</li>
+			<li> Go over Flex Wrap - justify content - display flex - https://profilepicturemaker.com/ </li>
+				<li>Recreate - https://codecary.com/personal-portfolio-website-using-html-css/</li>
+			</ul>
+			</p>
+				<br>
+			<h4>Create a Personal Site</h4>
+			<p><a href="https://wjhall12.github.io/css_profile_site/" target="_blank">Personal Site</a></p>
+
+			<p> Use the internet wayback machine and find seanhalpin.io from 2017. https://web.archive.org/web/20170603205659/http://seanhalpin.io/</p>
+			<p>When you first start. You will add the 3 images (2 clouds and 1 mountain) on your site in your top container. You will notice that the Heading and Paragraph is in block display. Which means, the element is as long as the width of the page. And noting else can be added on the same line as the infomation in the heading and paragraph. Images will either go below or above the h1 and p elements. </p>
+			<br>
+			<p>
+			<ol>
+			<li>1. Remove all the style in middle and bottom container that we used to practice. Then /add your profile image to the middle container. Give your own personal image a class and style it so that the size is proportion to the site. Go to https://profilepicturemaker.com/ to make your image a circle.  */</li>
+			<li>2. add an image to go for your skills. You can go to flaticons or giphy.com to find images or gifs. You can either download the image and save it inside your images folder or right click and copy the image address. /* make sure the images you chose for your skills are proportion to the Site. If you need to resize them be sure that you give the image a class name then style them in css </li>
+			<li>3. add another image to go for your skills. You can go to flaticons or giphy.com to find images or gifs. You can either download the image and save it inside your images folder or right click and copy the image address. Then add information in the paragraph and h3 that fits your skills and likes. --></li>
+			<li>4. Change the links and make them your own social media profile links if you want</li>
+			<li>5. Remove all the style in middle and bottom container</li>
+			<li>6. change the font size of the h1 to 6rem so that it stands out. 1rem of a font size is 16px. Using rem helps people who may be visually impared because they will increase in size if you set your browser view to show a larger font size where as px will not increase the size. Today rem is preferred over px </li>
+			<li>7. change the paragraph to a h2 and set the h2 font size to 2.5 rem</li>
+			<li>8. change margin from margin-top from 0 to margin: 50px auto 0 auto</li>
+			<li>9. Set the text colour for the h1 and h2 to both be the colour with hex code: #66BFBF and h3 to #11999e</li>
+			<li>10. Change all the h2 tags to have font weight: normal</li>
+			<li>11. add a .skill-row style and change the width to 50%. Set the margin to 100px auto;. Set the text-align: left;. Set the line-height: 2;</li>
+			<li> 12. make the skill images to float which will allow text to go on the side of the image as opposed to below the image. Hit save and refresh and you will see the text right next to the image. Add 30 px of margin right to the image so that you have a little bit of space between the image and the text. Hit save and refresh and see the image now has some space between it and the text. If you can, try to avoid using float because you can run into a lot of css problems. Only use it for cases of wrapping text around text </li>
+			<li>13. make the skill images to float which will allow text to go on the side of the image as opposed to below the image. Hit save and refresh and you will see the text right next to the image. Add 30 px of margin right to the image so that you have a little bit of space between the image and the text. Hit save and refresh and see the image now has some space between it and the text. If you can, try to avoid using float because you can run into a lot of css problems. Only use it for cases of wrapping text around text</li>
+			<li>15. add padding to the bottom of your h2. padding-bottom: 10px;</li>
+			<li>16. Add padding to the middle container so that the image is not so close to the top container image</li>
+			<li>17. Add a class to the intro text then give it a style to make the text not be so wide and that it wraps around to multiple lines. Then add .intro in css and set the width to 30% and the margin to auto so that it is centered. Then change the line-height of all paragraphs to 2</li>
+
+			<li>19. adjust the top cloud from 50px to 40 px on the top and bottom cloud from 300px to 250 px at the bottom </li>
+			<li>20. style the hr and change it to dotted. hr {   border: dotted #93B5C6 6px;
+  			border-bottom: none;   width: 4%;   margin: 100px auto;</li>
+			<li>21 change the width of the contact me message so that it is not so wide. So set the css of .contact-me to width 40% and the margin: 40px auto 60px;</li>
+			<li>22 add a button to your contact me page. .btn {  background-color: lightblue;    color: #40514e;  display: block;  width: 20%;   padding: 16px 8px; text-align: center;  margin: auto; text-decoration: none; border-radius: 8px;   font-family: 'Montserrat', sans-serif; } also add a hover to the .btn:hover { color: #eaf6f6;  ackground-color: #F0D9FF;  } </li>
+			<li>23 add a background color and padding of the footer.   background-color: #66bfbf;  padding: 50px 0 20px;</li>
+			<li>24 change the a which would be the links in your footer to a {   color: #11999e;   font-family: 'Montserrat', sans-serif;   margin: 10px 20px;   text-decoration: none;   } and add a a:hover {   color: #eaf6f6; }</li>
+			<li>25. Add a class to the copyright and name it copyright then style it .copyright {   color: #eaf6f6;  font-size: 0.75rem;   padding: 20px 0; } </li>
+
+				
+			</ol>
+			</p>
+				
+				
+				
+	
+				
+
+			<br>
+			<h3>Notes</h3>
+			<ul>
+			<li>Be sure to go over emojis</li>
+				<li>tables</li>
+				<li>forms</li>
+				<li>Explain CSS curly braces, selector: property and value</li>
+				<li>CSS background color first</li>
+				<li>CSS background hr next</li>
+				<li>CSS background headings next</li>
+				<li>Go to developer.mozilla.org and click on CSS, Reference, then click CSS reference link</li>
+				<li>Have students play around with css</li>
+				<li>Have students use class selectors in css</li>
+				<li>Make sure to use . in your css for class </li>
+				<li>Have students use id selectors in css</li>
+				<li>Make sure to use # in your css for id </li>
+				<li>You can only use the id name once, but class name can be use multiple times. </li>
+				<li>Which means that we rarely use id </li>
+				<li>Introduce divs. Divs are used to structure and divide your content</li>
+				<li>Add a div to the top of your resume with your picture and the Hello part</li>
+				<li> change the margin of the body to 0</li>
+				<li>explain how the dimensions start at the top, right, bottom, left</li>
+				<li>so if you say margin: 0, that means all 4 sides are 0</li>
+				<li> if you say margin: 0 2, that means top and bottom is 0, and left and right is 2</li>
+				<li>introduce border style, border width, color and radius of images</li>
+				<li>introduce image marging and float</li>
+				<li>1 rem = 16 px. Explain 1 vh = 1% height</li>
+				<li> explain display inline; display inline-block. Inline means items sit on separate lines, block means that sit on the same line</li>
+				<li>Paragraphs are displayed as block by default and sit on separate lines</li>
+				<li>images are displayed as inline-block by default</li>
+				<li>display none hides something on your screen</li>
+				<li>position relative allows you to move items from original, default static position</li>
+				<li>absolute position will move the item from the original position and move all other items after it up one vertical line</li>
+				<li>fixed position will keep the item on screen when you scroll. In most cases it is used with Nav bar that you want to stay appeared on screen when you scroll down</li>
+				<li>To put items in the center, simply type text align center</li>
+				<li>You can can also center items by choose margin auto 0 auto; vertically. This should only be used when you are changing the width of an item  </li>
+				
+			</ul>
+			<br>
+			
+	<br>
+	<hr>
+	<br>
+	
+	
+		</div>
+        </div>
+    </section>
+
+    
+
+    <!-- Creating Footer Layout in HTML -->
+    <footer class="copyright">
+        <p>&copy; 2020, Yourwebsite.com, Allrights reserved</p>
+    </footer>
+</body>
+</html>
